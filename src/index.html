@@ -1,11 +1,21 @@
 ---
 title: example
+author: Anna-Kyra Strik
 layout: 'layout.njk'
 ---
 
-{% for post in collections.post %}
+<!-- Dit is de front matter. Is alles wat in het template wordt verwezen met de dubbele curly brackets zet je hierin -->
+<!-- De front matter moet helemaal bovenaan het bestand staan bij 1 anders genereerd hij dit niet -->
+<ul>
 
-<h2>{{ post.data.title }}</h2>
-<p>{{ post.content }}</p>
+    {%- for post in collections.post -%}
 
-{% endfor %}
+        <li>
+            <h2>{{ post.data.title }}</h2>
+            {{ post.content }} <!-- hoeft geen p tag aan te geven is al een p tag uit zichzelf -->
+
+        </li>
+
+    {%- endfor %}
+
+</ul>

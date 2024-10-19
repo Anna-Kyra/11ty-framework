@@ -8,14 +8,18 @@
     <link rel="stylesheet" href="/styles/style.css">
 </head>
 <body>
-
-    {% include 'header.njk' %}
+    <!-- de curly brackets procent kijkt naar je bestanden  -->
+    <!-- partials inzetten -->
+    {% include 'header.njk' %}  
     
     <main>
-        {{ content | safe }} <!-- met safe erachter is het geen string meer, maar hij weet dat het html is dus hij schrijft het als html -->
-    </main>
-    <footer>
+        <!-- de curly brackets kijkt naar je front matter -->
+        <!-- met safe erachter is het geen string meer, maar hij weet dat het html is dus hij schrijft het als html -->
+        {{ content | safe }} 
         
-    </footer>
+    </main>
+
+    {% include 'footer.njk' %}  
+    
 </body>
 </html>
