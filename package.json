@@ -4,7 +4,7 @@
   "description": "Leren hoe het 11ty framework werkt",
   "main": "index.js",
   "scripts": {
-    "start": "eleventy --serve",
+    "dev": "eleventy --serve",
     "build": "eleventy"
   },
   "keywords": [],
