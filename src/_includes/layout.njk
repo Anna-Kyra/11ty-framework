@@ -4,18 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Post 2</title>
+    <title>{{ title }}</title>
     <link rel="stylesheet" href="/styles/style.css">
 </head>
 <body>
 
-    <header>
-        <h1>Post 2</h1> <!-- de default is als de title niet is aangegeven schrijft hij de default op -->
-</header>
+    {% include 'header.njk' %}
     
     <main>
-        <p>djkvkadvk</p>
- <!-- met safe erachter is het geen string meer, maar hij weet dat het html is dus hij schrijft het als html -->
+        {{ content | safe }} <!-- met safe erachter is het geen string meer, maar hij weet dat het html is dus hij schrijft het als html -->
     </main>
     <footer>
         
