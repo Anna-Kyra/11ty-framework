@@ -8,12 +8,11 @@ layout: 'layout.njk'
 <!-- De front matter moet helemaal bovenaan het bestand staan bij 1 anders genereerd hij dit niet -->
 <ul>
 
-    {%- for post in collections.post -%}
+    {%- for post in collections.post | reverse -%} <!-- als je | reverse doet dan doet hij de laatst gemaakte post eerst, als je dit niet doet dan doet hij post op chronologische volgorde -->
 
         <li>
             <h2>{{ post.data.title }}</h2>
             {{ post.content }} <!-- hoeft geen p tag aan te geven is al een p tag uit zichzelf -->
-
         </li>
 
     {%- endfor %}
