@@ -1,7 +1,10 @@
 const contentful = require("contentful") // Wordt de Contentful JavaScript SDK (client library) geimporteert
+const space = 'ujjnpzbu47yu'; 
+const accessToken = 'CgGJdRcykhP8nVcS1XTiF9yzouz6ZHqLuk6yK3_QVfc';  
+
 const client = contentful.createClient({ // nieuwe client aangemaakt met de tokens van de env file, zorgt ervoor dat het dynamisch word
-    space: process.env.CONTENTFUL_SPACE_ID,
-    accessToken: process.env.CONTENTFUL_ACCESS_TOKEN
+    space: space,
+    accessToken: accessToken
 })
 
 // console.log(client)

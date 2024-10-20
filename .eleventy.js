@@ -6,7 +6,6 @@ module.exports = function(eleventyConfig) { //kan zonder en met function maar me
     eleventyConfig.addPassthroughCopy('./src/styles')
     eleventyConfig.addPassthroughCopy('./src/assets')
     eleventyConfig.addPassthroughCopy('./src/redirect.html')
-    eleventyConfig.addPassthroughCopy('./src/_data')
 
     // Waar komen de source files vandaan 
     // Waar zijn de public facing files located
