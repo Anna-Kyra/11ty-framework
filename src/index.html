@@ -10,11 +10,7 @@ tags: "anderen"
 
     {%- for post in collections.post | reverse -%} <!-- als je | reverse doet dan doet hij de laatst gemaakte post eerst, als je dit niet doet dan doet hij post op chronologische volgorde -->
 
-        <li>
-            <h2> {{ post.data.title }} </h2>
-            {{ post.content }} <!-- hoeft geen p tag aan te geven is al een p tag uit zichzelf -->
-            <a href="{{ post.url }}"> See more </a>
-        </li>
+    {% include 'snippets/article-snippet.njk' %}  
 
     {%- endfor %}
 
