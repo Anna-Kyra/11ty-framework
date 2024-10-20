@@ -15,3 +15,13 @@ layout: 'layout.njk'
         </li>
 
 {%- endfor %}
+
+{%- for post in collections.anderen -%}
+
+        <li>
+            <h2> {{ post.data.title }} </h2>
+            {{ post.content }}
+            <a href="{{ post.url }}"> See more </a>
+        </li>
+
+{%- endfor %}
