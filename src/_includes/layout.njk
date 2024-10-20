@@ -1,25 +1,27 @@
 <!-- Een njk file is een template file voor html code -->
 <!DOCTYPE html>
 <html lang="nl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title }}</title>
-    <link rel="stylesheet" href="/styles/style.css">
-</head>
-<body>
-    <!-- de curly brackets procent kijkt naar je bestanden  -->
-    <!-- partials inzetten -->
-    {% include 'header.njk' %}  
-    
-    <main>
-        <!-- de curly brackets kijkt naar je front matter -->
-        <!-- met safe erachter is het geen string meer, maar hij weet dat het html is dus hij schrijft het als html -->
-        {{ content | safe }} 
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{{ title }}</title>
+        <link rel="stylesheet" href="/styles/style.css">
+    </head>
+    <body>
+        <!-- de curly brackets procent kijkt naar je bestanden  -->
+        <!-- partials inzetten -->
+        {% include 'header.njk' %}  
         
-    </main>
+        <main>
+            <!-- de curly brackets kijkt naar je front matter -->
+            <!-- met safe erachter is het geen string meer, maar hij weet dat het html is dus hij schrijft het als html -->
+            {{ content | safe }} 
+            
+        </main>
 
-    {% include 'footer.njk' %}  
-    
-</body>
+        {% include 'footer.njk' %}  
+
+        <!-- contentful moet ingeladen worden net voor het afsluiten van de body -->
+        {{ contentful }}
+    </body>
 </html>

@@ -1,7 +1,16 @@
 ---
-title: example
+pagination: 
+    data: contentful
+    size: 1
+    alias: page
+    addAllPagesToCollections: true
+permalink: "{{ page.slug | slug }}/"
+tags: ["page", "anderen"]
 layout: 'layout.njk'
-tags: "anderen"
+
+eleventyComputed:
+    title: "{{ page.title}}"
+
 ---
 
 <!-- Dit is de front matter. Is alles wat in het template wordt verwezen met de dubbele curly brackets zet je hierin -->
