@@ -1,0 +1,18 @@
+---
+pagination:
+  data: redirects
+  size: 1
+  alias: redirect
+permalink: {{ redirect.from }}
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="refresh" content="0;url={{ redirect.to }}">
+  <title>Redirecting...</title>
+</head>
+<body>
+  <p>Redirecting to <a href="{{ redirect.to }}">{{ redirect.to }}</a></p>
+</body>
+</html>

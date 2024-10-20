@@ -1,0 +1,4 @@
+[
+    { "from": "/", "to": "/home" },
+    { "from": "/form", "to": "/foo" }
+]
