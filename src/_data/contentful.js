@@ -2,6 +2,9 @@ const contentful = require("contentful") // Wordt de Contentful JavaScript SDK (
 // console.log('space = ' + process.env.CONTENTFUL_SPACE_ID) 
 // console.log('access token = ' + process.env.CONTENTFUL_ACCESS_TOKEN)
 
+// const space = process.env.CONTENTFUL_SPACE_ID 
+// const accessToken = process.env.CONTENTFUL_ACCESS_TOKEN 
+
 const space = 'ujjnpzbu47yu'
 const accessToken = 'CgGJdRcykhP8nVcS1XTiF9yzouz6ZHqLuk6yK3_QVfc'
 
@@ -9,9 +12,6 @@ const client = contentful.createClient({ // nieuwe client aangemaakt met de toke
     space: space,
     accessToken: accessToken
 })
-
-
-// console.log(client) 
 
 // console.log(client)
 
