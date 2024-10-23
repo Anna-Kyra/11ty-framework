@@ -9,7 +9,7 @@ tags: ["page", "anderen"]
 layout: 'layout.njk'
 
 eleventyComputed:
-    title: "{{ page.title}}"
+    title: "{{ page.title }}"
 ---
 <!-- pagination is ervoor om eht bij deze uit contentful te halen en in de public map meerdere mappen te maken -->
 <!-- eleventy computed = om dingen dynamisch te maken -->
@@ -24,4 +24,18 @@ eleventyComputed:
 
     {%- endfor %}
 
+    {%- for component in page.components -%}
+        <p>hi</p>
+    {% endfor %}
+
 </ul>
+
+<ul>
+    {% for page in contentful %}
+        <li>
+            <a href="{ page.slug | url }">{{page.slug}}</a>
+        </li>
+    {% endfor %}
+</ul>
+
+{{ contentful }}
