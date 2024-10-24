@@ -11,6 +11,17 @@ module.exports = function(eleventyConfig) { //kan zonder en met function maar me
     eleventyConfig.addPassthroughCopy('./src/assets')
     eleventyConfig.addShortcode('documentToHtmlString', documentToHtmlString);
 
+
+    eleventyConfig.addShortcode("hero", function(hero) {
+        return `
+                    <section>
+                        <h1>${hero.fields.title}</h1>
+                        <h2>${hero.fields.subtitle}</h2>
+                        ${ documentToHtmlString(hero.fields) }
+                    </section>`;
+    });
+
+
     // Waar komen de source files vandaan 
     // Waar zijn de public facing files located
     return {
@@ -19,5 +30,5 @@ module.exports = function(eleventyConfig) { //kan zonder en met function maar me
             output: "public" // Default is _site, maar wil hem in de public folder omdat dat logischer is
         }
     }
-    
+
 }

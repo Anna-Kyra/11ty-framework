@@ -19,38 +19,30 @@ eleventyComputed:
 
 <a href="/">ga naar home</a>
 
-<ul>
 
-    {%- for post in collections.post | reverse -%} <!-- als je | reverse doet dan doet hij de laatst gemaakte post eerst, als je dit niet doet dan doet hij post op chronologische volgorde -->
 
-    {% include 'snippets/article-snippet.njk' %}  
-
-    {%- endfor %}
-
-    {%- for component in page.components -%}
-        <p>hi</p>
-        {{ component.sys.contentType.sys.id}}
-        {% if component.sys.contentType.sys.id == "hero" %}
-            <p>dit is een hero</p>
-        {% elsif component.sys.contentType.sys.id == "Card" %}
-            <p>dit is een card</p>
-        {% elsif component.sys.contentType.sys.id == "Footer" %}
-            <p>dit is een footer</p>
-        {% elsif component.sys.contentType.sys.id == "itemCollection" %}
-            <p>dit is een item</p>
-        {% elsif component.sys.contentType.sys.id == "typeText" %}
-            <p>dit is een text</p>
-        {% elsif component.sys.contentType.sys.id == "navigation" %}
-            <p>dit is een navigatie</p>
-        {% elsif component.sys.contentType.sys.id == "typeAssets" %}
-            <p>dit is een asset</p>
-        {% elsif component.sys.contentType.sys.id == "typeLink" %}
-            <p>dit is een link</p>
-        {% elsif component.sys.contentType.sys.id == "typeText" %}
-            <p>dit is een link</p>
-        {% endif %}
-    {% endfor %}
-    
-</ul>
+{%- for component in page.components -%}
+    {{ component.sys.contentType.sys.id}}
+    <!-- als dat component in de pagina zit wordt het gegenereerd -->
+    {% if component.sys.contentType.sys.id == "hero" %}
+        {% include 'organisms/hero.njk' %}
+    {% elsif component.sys.contentType.sys.id == "Card" %}
+        <p>dit is een card</p>
+    {% elsif component.sys.contentType.sys.id == "Footer" %}
+        <p>dit is een footer</p>
+    {% elsif component.sys.contentType.sys.id == "itemCollection" %}
+        <p>dit is een item</p>
+    {% elsif component.sys.contentType.sys.id == "typeText" %}
+        <p>dit is een text</p>
+    {% elsif component.sys.contentType.sys.id == "navigation" %}
+        <p>dit is een navigatie</p>
+    {% elsif component.sys.contentType.sys.id == "typeAssets" %}
+        <p>dit is een asset</p>
+    {% elsif component.sys.contentType.sys.id == "typeLink" %}
+        <p>dit is een link</p>
+    {% elsif component.sys.contentType.sys.id == "typeText" %}
+        <p>dit is een link</p>
+    {% endif %}
+{% endfor %}
 
 <!-- {{ contentful }} -->

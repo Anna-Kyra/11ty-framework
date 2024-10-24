@@ -1,0 +1,18 @@
+<section>
+    <video
+        autoplay
+        loop
+        muted
+        width="1280"
+        height="1000"
+        aria-label="{{component.fields.asset.fields.file.description}}"
+        poster="/styles/assets/hero-image-background.webp"
+    >
+        <!-- video moet werken maar werkt niet, de persoon die hiervoor mee bezig was lukte dat ook niet dus heeft een statische afbeelding gebruikt. -->
+        <source src='https:{{component.fields.asset.fields.file.url}}' type="video/webm" /> 
+    </video>
+    <h1>{{ component.fields.title }}</h1>
+    <button>book now</button>
+    <p>{{ component.fields.subtitle }}</p>
+    
+</section>

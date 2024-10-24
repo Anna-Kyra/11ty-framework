@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title></title>
-        <link rel="stylesheet" href="/styles/style.css">
+        <link rel="stylesheet" href="/styles/glsobal.css">
     </head>
     <body>
         <!-- de curly brackets procent kijkt naar je bestanden  -->
@@ -23,55 +23,48 @@
 <!-- Dit is de front matter. Is alles wat in het template wordt verwezen met de dubbele curly brackets zet je hierin -->
 <!-- De front matter moet helemaal bovenaan het bestand staan bij 1 anders genereerd hij dit niet -->
 
-<a href="/">ga naar home</a>
-
-<ul><!-- als je | reverse doet dan doet hij de laatst gemaakte post eerst, als je dit niet doet dan doet hij post op chronologische volgorde -->
-
-    <li>
-    <h2> Post 1 </h2>
-    <p>hi hallo
-sibkadjbvkdsv</p>
- <!-- hoeft geen p tag aan te geven is al een p tag uit zichzelf -->
-    <a href="/posts/post-1/"> See more </a>
-</li><!-- als je | reverse doet dan doet hij de laatst gemaakte post eerst, als je dit niet doet dan doet hij post op chronologische volgorde -->
-
-    <li>
-    <h2> Post 2 </h2>
-    <p>djkvkadvk</p>
- <!-- hoeft geen p tag aan te geven is al een p tag uit zichzelf -->
-    <a href="/posts/post-2/"> See more </a>
-</li><!-- als je | reverse doet dan doet hij de laatst gemaakte post eerst, als je dit niet doet dan doet hij post op chronologische volgorde -->
-
-    <li>
-    <h2> Post 3 </h2>
-    <p>djkvkadvk</p>
- <!-- hoeft geen p tag aan te geven is al een p tag uit zichzelf -->
-    <a href="/posts/post-3/"> See more </a>
-</li><p>hi</p>
-        hero
-        
-            <p>dit is een hero</p>
-        
-    <p>hi</p>
-        itemCollection
-        
-            <p>dit is een item</p>
-        
-    <p>hi</p>
-        typeText
-        
-            <p>dit is een text</p>
-        
+<a href="/">ga naar home</a>hero
+    <!-- als dat component in de pagina zit wordt het gegenereerd -->
     
+        <section>
+    <video
+        autoplay
+        loop
+        muted
+        width="1280"
+        height="1000"
+        aria-label=""
+        poster="/styles/assets/hero-image-background.webp"
+    >
+        <!-- video moet werken maar werkt niet, de persoon die hiervoor mee bezig was lukte dat ook niet dus heeft een statische afbeelding gebruikt. -->
+        <source src='https://images.ctfassets.net/ujjnpzbu47yu/4Q3z34YI82klX0S8TPOLbG/3c5aa13945aae2d5bce0e433bfbebc24/DSC_4968.webp' type="video/webm" /> 
+    </video>
+    <h1>The ultimate</h1>
+    <button>book now</button>
+    <p>Cocktail walk</p>
     
-</ul>
+</section>
+    
+itemCollection
+    <!-- als dat component in de pagina zit wordt het gegenereerd -->
+    
+        <p>dit is een item</p>
+    
+typeText
+    <!-- als dat component in de pagina zit wordt het gegenereerd -->
+    
+        <p>dit is een text</p>
+    
+
 
 <!-- [object Object][object Object][object Object][object Object][object Object][object Object][object Object][object Object][object Object][object Object] --> 
             
         </main>
 
         <footer>
+    
     dit is een footer
+
 </footer>  
 
     </body>

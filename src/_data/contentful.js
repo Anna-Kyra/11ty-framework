@@ -11,14 +11,16 @@ const client = contentful.createClient({ // nieuwe client aangemaakt met de toke
 })
 
 // console.log(client)
-
 module.exports = function() {
-    return client.getEntries({ content_type: 'page', order: 'sys.createdAt' })
+    return client.getEntries({ 
+        content_type: 'page', 
+        order: 'sys.createdAt'
+    })
     .then(function(response) {
         const page = response.items
         // console.log(JSON.stringify(page))
         .map(function(page) {
-            page.fields.date= new Date(page.sys.updatedAt);
+            page.fields.date = new Date(page.sys.updatedAt);
             // console.log(page.fields.components)
             console.log(page.fields.components)
             // console.log(JSON.stringify(page.sys.id))
@@ -30,4 +32,5 @@ module.exports = function() {
     })
     .catch(console.error);
 };
+
 
