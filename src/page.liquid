@@ -26,22 +26,43 @@ eleventyComputed:
     <!-- als dat component in de pagina zit wordt het gegenereerd -->
     {% if component.sys.contentType.sys.id == "hero" %}
         {% include 'organisms/hero.njk' %}
-    {% elsif component.sys.contentType.sys.id == "Card" %}
+
+
+
+    {% elsif component.sys.contentType.sys.id == "card" %}
         <p>dit is een card</p>
-    {% elsif component.sys.contentType.sys.id == "Footer" %}
-        <p>dit is een footer</p>
+
+
+
     {% elsif component.sys.contentType.sys.id == "itemCollection" %}
-        <p>dit is een item</p>
+        <h2>{{ component.fields.internalName }}</h2>
+        {% for item in component.fields.components %} 
+            <p>hi</p>
+            {{ item.sys.id }}
+        {% endfor %}  
+
+
     {% elsif component.sys.contentType.sys.id == "typeText" %}
-        <p>dit is een text</p>
+        <h2>{{ component.fields.title }}</h2>
+        <p>dit is een text</p>        
+
+
+
     {% elsif component.sys.contentType.sys.id == "navigation" %}
         <p>dit is een navigatie</p>
+
+
+
     {% elsif component.sys.contentType.sys.id == "typeAssets" %}
         <p>dit is een asset</p>
+
+
+
     {% elsif component.sys.contentType.sys.id == "typeLink" %}
         <p>dit is een link</p>
-    {% elsif component.sys.contentType.sys.id == "typeText" %}
-        <p>dit is een link</p>
+
+
+
     {% endif %}
 {% endfor %}
 
