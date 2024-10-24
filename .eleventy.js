@@ -19,6 +19,5 @@ module.exports = function(eleventyConfig) { //kan zonder en met function maar me
             output: "public" // Default is _site, maar wil hem in de public folder omdat dat logischer is
         }
     }
-
     
 }

@@ -16,8 +16,13 @@ module.exports = function() {
     return client.getEntries({ content_type: 'page', order: 'sys.createdAt' })
     .then(function(response) {
         const page = response.items
+        // console.log(JSON.stringify(page))
         .map(function(page) {
             page.fields.date= new Date(page.sys.updatedAt);
+            // console.log(page.fields.components)
+            console.log(JSON.stringify(page.sys.id))
+            // console.log(page.fields.sys.contentType.sys.id)
+            // console.log(JSON.stringify(page.fields.components))
             return page.fields;
         });
         return page;

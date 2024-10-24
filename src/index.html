@@ -1,41 +1,7 @@
----
-pagination: 
-    data: contentful
-    size: 1
-    alias: page
-    addAllPagesToCollections: true
-permalink: "{{ page.slug | slug }}/"
-tags: ["page", "anderen"]
-layout: 'layout.njk'
-
-eleventyComputed:
-    title: "{{ page.title }}"
----
-<!-- pagination is ervoor om eht bij deze uit contentful te halen en in de public map meerdere mappen te maken -->
-<!-- eleventy computed = om dingen dynamisch te maken -->
-
-<!-- Dit is de front matter. Is alles wat in het template wordt verwezen met de dubbele curly brackets zet je hierin -->
-<!-- De front matter moet helemaal bovenaan het bestand staan bij 1 anders genereerd hij dit niet -->
-<ul>
-
-    {%- for post in collections.post | reverse -%} <!-- als je | reverse doet dan doet hij de laatst gemaakte post eerst, als je dit niet doet dan doet hij post op chronologische volgorde -->
-
-    {% include 'snippets/article-snippet.njk' %}  
-
-    {%- endfor %}
-
-    {%- for component in page.components -%}
-        <p>hi</p>
-    {% endfor %}
-
-</ul>
-
 <ul>
     {% for page in contentful %}
         <li>
-            <a href="{ page.slug | url }">{{page.slug}}</a>
+            <a href="{{ page.slug | url }}">{{page.slug}}</a>
         </li>
     {% endfor %}
 </ul>
-
-{{ contentful }}
