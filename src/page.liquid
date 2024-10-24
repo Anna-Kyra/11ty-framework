@@ -46,9 +46,7 @@ eleventyComputed:
 
 
     {% elsif component.sys.contentType.sys.id == "typeText" %}
-        <h2>{{ component.fields.title }}</h2>      
-        <p>{{ component.fields.textParagraph }}</p>
-        <img src="https:{{component.fields.asset.fields.file.url}}" alt="{{component.fields.asset.fields.title}}">
+        {% include 'organisms/text.njk' %}
 
 
     {% elsif component.sys.contentType.sys.id == "navigation" %}
