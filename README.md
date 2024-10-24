@@ -1,7 +1,10 @@
 # Justify your Tech-stack
-Heb na veel overweging gekozen om in sprint 15 voor het framework 11ty te kiezen. 
-Het CMS systeem dat ik heb gebruikt voor deze repo is contentful.
-Voor het deployen heb ik netlify gebruikt
+Deze repo staat in het teken van je eigen tech-stack flow te onderzoeken en te experimenteren. Ik heb voor de volgende tech-stack gekozen.
+
+- Framework: Heb na veel overweging gekozen om in sprint 15 voor het framework 11ty te kiezen.
+- Templates: Heb over het algemeen het template file nunjucks gebruikt. Ook heb ik met html en een liquid file gewerkt.
+- CMS: Het CMS systeem dat ik heb gebruikt voor deze repo is contentful.
+- Deployer: Voor het deployen heb ik netlify gebruikt
 
 ## 11ty bevindingen
 Het installeren en het builden van dit framework gaat ontzettend snel. Dit is ook mede hun verkoop middel. Het builden gebeurt meestal in 0.12 sec.
@@ -16,8 +19,12 @@ Ik had wel wat moeite met het goed runnen van de database in 11ty.
 ### Pros:
 1. Het framwork is ontzettend snel
 2. Je kan een 100% lighthouse test krijgen met dit framework (wat je niet kan zeggen met andere populaire frameworks)
+3. 11ty is gemaakt met JavaScript en NodeJs in gedachten, dus het is bekend voor de meeste FrontEnders
+4. Kan met veel templates werken zoals: HTML, nunjucks, MarkDown, Liquid, etc.
+5. 
 
 ### Cons:
+1. Is meer gemaakt voor statische website's, dus daar draait de docs ook meer om
 
 ## Contentful bevindingen
 Heb voor contentful gekozen, omdat het project al deze headless CMS gebruikte.
@@ -50,4 +57,14 @@ Vind contentful niet om aan te raden. In iedergeval niet voor wat kleinere bedri
 1. 
 
 ## Bronnen
+### Tutorials
+> Tutorials die ik heb gevolgd.
+- Kevin Powell tutorial: https://www.youtube.com/watch?v=4wD00RT6d-g&list=PLwhCq3ZFGOGgZDg_pnVh15gUfYqWnlWRs
+- 11ty blog tutorial: https://www.youtube.com/watch?v=kzf9A9tkkl4
 
+### Documentatie
+- Getting started, 11ty docs: https://www.11ty.dev/docs/
+- Frontmatter, 11ty docs: https://www.11ty.dev/docs/data-frontmatter/
+- Contentful met 11ty, Contentful docs: https://www.contentful.com/blog/integrating-contentful-with-eleventy-create-static-sites/
+- - > Uitleg over hoe je dynamische data van contentful in 11ty kan zetten.
+- Contentful met 11ty, ianjmacintosh project: https://www.ianjmacintosh.com/articles/getting-content-from-contentful-into-eleventy/
