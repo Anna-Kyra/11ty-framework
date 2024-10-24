@@ -20,7 +20,8 @@ module.exports = function() {
         .map(function(page) {
             page.fields.date= new Date(page.sys.updatedAt);
             // console.log(page.fields.components)
-            console.log(JSON.stringify(page.sys.id))
+            console.log(page.fields.components)
+            // console.log(JSON.stringify(page.sys.id))
             // console.log(page.fields.sys.contentType.sys.id)
             // console.log(JSON.stringify(page.fields.components))
             return page.fields;
