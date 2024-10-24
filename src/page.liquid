@@ -11,6 +11,7 @@ layout: layout.njk
 eleventyComputed:
     title: "{{ page.title }}"
 ---
+<!-- Bron: https://www.contentful.com/blog/integrating-contentful-with-eleventy-create-static-sites/ -->
 <!-- pagination is ervoor om eht bij deze uit contentful te halen en in de public map meerdere mappen te maken -->
 <!-- eleventy computed = om dingen dynamisch te maken -->
 
@@ -24,6 +25,7 @@ eleventyComputed:
 {%- for component in page.components -%}
     {{ component.sys.contentType.sys.id}}
     <!-- als dat component in de pagina zit wordt het gegenereerd -->
+    <!-- De volgorde die gegenereerd wordt in de public is van contentful -->
     {% if component.sys.contentType.sys.id == "hero" %}
         {% include 'organisms/hero.njk' %}
 
@@ -35,17 +37,18 @@ eleventyComputed:
 
 
     {% elsif component.sys.contentType.sys.id == "itemCollection" %}
-        <h2>{{ component.fields.internalName }}</h2>
-        {% for item in component.fields.components %} 
-            <p>hi</p>
-            {{ item.sys.id }}
-        {% endfor %}  
+        <section>
+            <h2>{{ component.fields.internalName }}</h2>
+            {% for item in component.fields.components %} 
+                <p>{{ item.sys.id }}</p>
+            {% endfor %}  
+        </section>
 
 
     {% elsif component.sys.contentType.sys.id == "typeText" %}
-        <h2>{{ component.fields.title }}</h2>
-        <p>dit is een text</p>        
-
+        <h2>{{ component.fields.title }}</h2>      
+        <p>{{ component.fields.textParagraph }}</p>
+        <img src="https:{{component.fields.asset.fields.file.url}}" alt="{{component.fields.asset.fields.title}}">
 
 
     {% elsif component.sys.contentType.sys.id == "navigation" %}
@@ -61,9 +64,9 @@ eleventyComputed:
     {% elsif component.sys.contentType.sys.id == "typeLink" %}
         <p>dit is een link</p>
 
-
-
     {% endif %}
 {% endfor %}
 
 <!-- {{ contentful }} -->
+
+<!-- Bron: https://www.contentful.com/blog/integrating-contentful-with-eleventy-create-static-sites/ -->

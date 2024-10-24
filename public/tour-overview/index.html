@@ -11,13 +11,14 @@
         <!-- de curly brackets procent kijkt naar je bestanden  -->
         <!-- partials inzetten -->
         <header>
-        <h1>Ticket overview page</h1> <!-- de default is als de title niet is aangegeven schrijft hij de default op -->
+        <!-- hier moet de contentType: navigation uit de cms -->
 </header>  
         
         <main>
             <!-- de curly brackets kijkt naar je front matter -->
             <!-- met safe erachter is het geen string meer, maar hij weet dat het html is dus hij schrijft het als html -->
-            <!-- pagination is ervoor om eht bij deze uit contentful te halen en in de public map meerdere mappen te maken -->
+            <!-- Bron: https://www.contentful.com/blog/integrating-contentful-with-eleventy-create-static-sites/ -->
+<!-- pagination is ervoor om eht bij deze uit contentful te halen en in de public map meerdere mappen te maken -->
 <!-- eleventy computed = om dingen dynamisch te maken -->
 
 <!-- Dit is de front matter. Is alles wat in het template wordt verwezen met de dubbele curly brackets zet je hierin -->
@@ -25,32 +26,32 @@
 
 <a href="/">ga naar home</a>itemCollection
     <!-- als dat component in de pagina zit wordt het gegenereerd -->
+    <!-- De volgorde die gegenereerd wordt in de public is van contentful -->
     
-        <h2>Tickets Cocktail Walks</h2>
-         
-            <p>hi</p>
-            2G8P8p7T5DtrwBekVTej1K
-         
-            <p>hi</p>
-            3YUXSDIjPrZhmvBLP4wgLH
-         
-            <p>hi</p>
-            2LwQ9ycGgh1k0xdv6Kd2Sd
-         
-            <p>hi</p>
-            4vFZUpZVX8OejD0mNOHO8U
-          
+        <section>
+            <h2>Tickets Cocktail Walks</h2>
+             
+                <p>2G8P8p7T5DtrwBekVTej1K</p>
+             
+                <p>3YUXSDIjPrZhmvBLP4wgLH</p>
+             
+                <p>2LwQ9ycGgh1k0xdv6Kd2Sd</p>
+             
+                <p>4vFZUpZVX8OejD0mNOHO8U</p>
+              
+        </section>
 
 
     
 
 
-<!-- [object Object][object Object][object Object][object Object][object Object][object Object][object Object][object Object][object Object][object Object] --> 
+<!-- [object Object][object Object][object Object][object Object][object Object][object Object][object Object][object Object][object Object][object Object] -->
+
+<!-- Bron: https://www.contentful.com/blog/integrating-contentful-with-eleventy-create-static-sites/ --> 
             
         </main>
 
         <footer>
-    Ticket overview page
     dit is een footer
 
 </footer>  

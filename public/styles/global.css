@@ -23,9 +23,6 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: .3;
 }
 
-
-
-
 @font-face {
   font-family: 'Epilogue';
   src: url('fonts/Epilogue-VariableFont_wght.ttf') format('truetype');

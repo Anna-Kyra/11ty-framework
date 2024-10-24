@@ -11,13 +11,14 @@
         <!-- de curly brackets procent kijkt naar je bestanden  -->
         <!-- partials inzetten -->
         <header>
-        <h1>WOGO, explore your city, one cocktail at a time.</h1> <!-- de default is als de title niet is aangegeven schrijft hij de default op -->
+        <!-- hier moet de contentType: navigation uit de cms -->
 </header>  
         
         <main>
             <!-- de curly brackets kijkt naar je front matter -->
             <!-- met safe erachter is het geen string meer, maar hij weet dat het html is dus hij schrijft het als html -->
-            <!-- pagination is ervoor om eht bij deze uit contentful te halen en in de public map meerdere mappen te maken -->
+            <!-- Bron: https://www.contentful.com/blog/integrating-contentful-with-eleventy-create-static-sites/ -->
+<!-- pagination is ervoor om eht bij deze uit contentful te halen en in de public map meerdere mappen te maken -->
 <!-- eleventy computed = om dingen dynamisch te maken -->
 
 <!-- Dit is de front matter. Is alles wat in het template wordt verwezen met de dubbele curly brackets zet je hierin -->
@@ -25,6 +26,7 @@
 
 <a href="/">ga naar home</a>hero
     <!-- als dat component in de pagina zit wordt het gegenereerd -->
+    <!-- De volgorde die gegenereerd wordt in de public is van contentful -->
     
         <section>
     <video
@@ -51,58 +53,59 @@
     
 itemCollection
     <!-- als dat component in de pagina zit wordt het gegenereerd -->
+    <!-- De volgorde die gegenereerd wordt in de public is van contentful -->
     
-        <h2>How It Works Cards</h2>
-         
-            <p>hi</p>
-            6OcMQU9PNnNmFfEX5nSsSV
-         
-            <p>hi</p>
-            7LYETzf4WwwcySWgjygoOc
-         
-            <p>hi</p>
-            38rsJTqkG7wrVbQk0bjeRh
-         
-            <p>hi</p>
-            11n5LLXps86m6gQBQ7337J
-          
+        <section>
+            <h2>How It Works Cards</h2>
+             
+                <p>6OcMQU9PNnNmFfEX5nSsSV</p>
+             
+                <p>7LYETzf4WwwcySWgjygoOc</p>
+             
+                <p>38rsJTqkG7wrVbQk0bjeRh</p>
+             
+                <p>11n5LLXps86m6gQBQ7337J</p>
+              
+        </section>
 
 
     
 itemCollection
     <!-- als dat component in de pagina zit wordt het gegenereerd -->
+    <!-- De volgorde die gegenereerd wordt in de public is van contentful -->
     
-        <h2>What We Do </h2>
-         
-            <p>hi</p>
-            1Y9wrZSOc67pmxqypM8vQL
-         
-            <p>hi</p>
-            Tc5tyJK9g16Fys3rFWEkZ
-         
-            <p>hi</p>
-            5HXc4zRovYrminCztduSAw
-          
+        <section>
+            <h2>What We Do </h2>
+             
+                <p>1Y9wrZSOc67pmxqypM8vQL</p>
+             
+                <p>Tc5tyJK9g16Fys3rFWEkZ</p>
+             
+                <p>5HXc4zRovYrminCztduSAw</p>
+              
+        </section>
 
 
     
 typeText
     <!-- als dat component in de pagina zit wordt het gegenereerd -->
+    <!-- De volgorde die gegenereerd wordt in de public is van contentful -->
     
-        <h2>Gift Card</h2>
-        <p>dit is een text</p>        
-
+        <h2>Gift Card</h2>      
+        <p>A gift for every expierence </p>
+        <img src="https://images.ctfassets.net/ujjnpzbu47yu/5pLf8conEgot84ip7nbySS/b5029389d25c6adb3ea80b643d545f1b/Vector.png" alt="Gift-icon">
 
 
     
 
 
-<!-- [object Object][object Object][object Object][object Object][object Object][object Object][object Object][object Object][object Object][object Object] --> 
+<!-- [object Object][object Object][object Object][object Object][object Object][object Object][object Object][object Object][object Object][object Object] -->
+
+<!-- Bron: https://www.contentful.com/blog/integrating-contentful-with-eleventy-create-static-sites/ --> 
             
         </main>
 
         <footer>
-    WOGO, explore your city, one cocktail at a time.
     dit is een footer
 
 </footer>  

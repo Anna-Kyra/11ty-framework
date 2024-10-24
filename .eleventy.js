@@ -21,6 +21,8 @@ module.exports = function(eleventyConfig) { //kan zonder en met function maar me
                     </section>`;
     });
 
+     
+
 
     // Waar komen de source files vandaan 
     // Waar zijn de public facing files located

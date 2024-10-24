@@ -11,13 +11,14 @@
         <!-- de curly brackets procent kijkt naar je bestanden  -->
         <!-- partials inzetten -->
         <header>
-        <h1></h1> <!-- de default is als de title niet is aangegeven schrijft hij de default op -->
+        <!-- hier moet de contentType: navigation uit de cms -->
 </header>  
         
         <main>
             <!-- de curly brackets kijkt naar je front matter -->
             <!-- met safe erachter is het geen string meer, maar hij weet dat het html is dus hij schrijft het als html -->
-            <!-- pagination is ervoor om eht bij deze uit contentful te halen en in de public map meerdere mappen te maken -->
+            <!-- Bron: https://www.contentful.com/blog/integrating-contentful-with-eleventy-create-static-sites/ -->
+<!-- pagination is ervoor om eht bij deze uit contentful te halen en in de public map meerdere mappen te maken -->
 <!-- eleventy computed = om dingen dynamisch te maken -->
 
 <!-- Dit is de front matter. Is alles wat in het template wordt verwezen met de dubbele curly brackets zet je hierin -->
@@ -25,6 +26,7 @@
 
 <a href="/">ga naar home</a>hero
     <!-- als dat component in de pagina zit wordt het gegenereerd -->
+    <!-- De volgorde die gegenereerd wordt in de public is van contentful -->
     
         <section>
     <video
@@ -51,38 +53,40 @@
     
 itemCollection
     <!-- als dat component in de pagina zit wordt het gegenereerd -->
+    <!-- De volgorde die gegenereerd wordt in de public is van contentful -->
     
-        <h2>About this walk</h2>
-         
-            <p>hi</p>
-            eao4o15sZBfUCIybo46aG
-         
-            <p>hi</p>
-            A0noHaOArcMKzqtdbPqsv
-         
-            <p>hi</p>
-            4O3YhpSkOP3YL2rhd6hBNe
-          
+        <section>
+            <h2>About this walk</h2>
+             
+                <p>eao4o15sZBfUCIybo46aG</p>
+             
+                <p>A0noHaOArcMKzqtdbPqsv</p>
+             
+                <p>4O3YhpSkOP3YL2rhd6hBNe</p>
+              
+        </section>
 
 
     
 typeText
     <!-- als dat component in de pagina zit wordt het gegenereerd -->
+    <!-- De volgorde die gegenereerd wordt in de public is van contentful -->
     
-        <h2>We make walking a lot more fun. Got excited?</h2>
-        <p>dit is een text</p>        
-
+        <h2>We make walking a lot more fun. Got excited?</h2>      
+        <p></p>
+        <img src="https:" alt="">
 
 
     
 
 
-<!-- [object Object][object Object][object Object][object Object][object Object][object Object][object Object][object Object][object Object][object Object] --> 
+<!-- [object Object][object Object][object Object][object Object][object Object][object Object][object Object][object Object][object Object][object Object] -->
+
+<!-- Bron: https://www.contentful.com/blog/integrating-contentful-with-eleventy-create-static-sites/ --> 
             
         </main>
 
         <footer>
-    
     dit is een footer
 
 </footer>  

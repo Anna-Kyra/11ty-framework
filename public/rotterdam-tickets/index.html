@@ -11,13 +11,14 @@
         <!-- de curly brackets procent kijkt naar je bestanden  -->
         <!-- partials inzetten -->
         <header>
-        <h1>Rotterdam Tickets</h1> <!-- de default is als de title niet is aangegeven schrijft hij de default op -->
+        <!-- hier moet de contentType: navigation uit de cms -->
 </header>  
         
         <main>
             <!-- de curly brackets kijkt naar je front matter -->
             <!-- met safe erachter is het geen string meer, maar hij weet dat het html is dus hij schrijft het als html -->
-            <!-- pagination is ervoor om eht bij deze uit contentful te halen en in de public map meerdere mappen te maken -->
+            <!-- Bron: https://www.contentful.com/blog/integrating-contentful-with-eleventy-create-static-sites/ -->
+<!-- pagination is ervoor om eht bij deze uit contentful te halen en in de public map meerdere mappen te maken -->
 <!-- eleventy computed = om dingen dynamisch te maken -->
 
 <!-- Dit is de front matter. Is alles wat in het template wordt verwezen met de dubbele curly brackets zet je hierin -->
@@ -25,6 +26,7 @@
 
 <a href="/">ga naar home</a>hero
     <!-- als dat component in de pagina zit wordt het gegenereerd -->
+    <!-- De volgorde die gegenereerd wordt in de public is van contentful -->
     
         <section>
     <video
@@ -51,29 +53,30 @@
     
 itemCollection
     <!-- als dat component in de pagina zit wordt het gegenereerd -->
+    <!-- De volgorde die gegenereerd wordt in de public is van contentful -->
     
-        <h2>Details Cocktail walk Cards</h2>
-         
-            <p>hi</p>
-            6hjBkz2StHVc89APRfvuNo
-         
-            <p>hi</p>
-            2IQixdE7LQlxdQs4zJG4my
-         
-            <p>hi</p>
-            6FoCPx3JwlB91ZCIAsm0NT
-          
+        <section>
+            <h2>Details Cocktail walk Cards</h2>
+             
+                <p>6hjBkz2StHVc89APRfvuNo</p>
+             
+                <p>2IQixdE7LQlxdQs4zJG4my</p>
+             
+                <p>6FoCPx3JwlB91ZCIAsm0NT</p>
+              
+        </section>
 
 
     
 
 
-<!-- [object Object][object Object][object Object][object Object][object Object][object Object][object Object][object Object][object Object][object Object] --> 
+<!-- [object Object][object Object][object Object][object Object][object Object][object Object][object Object][object Object][object Object][object Object] -->
+
+<!-- Bron: https://www.contentful.com/blog/integrating-contentful-with-eleventy-create-static-sites/ --> 
             
         </main>
 
         <footer>
-    Rotterdam Tickets
     dit is een footer
 
 </footer>  
