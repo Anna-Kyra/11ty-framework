@@ -6,6 +6,9 @@ Deze repo staat in het teken van je eigen tech-stack flow te onderzoeken en te e
 - CMS: Het CMS systeem dat ik heb gebruikt voor deze repo is contentful.
 - Deployer: Voor het deployen heb ik netlify gebruikt
 
+Heb verder notities gemaakt in men [I love web](https://github.com/Anna-Kyra/i-love-web/wiki/Eleventy) voor mezelf om uitteleggen hoe ik sommigen dingen heb gedaan.
+Verder heb ik met nieuwe code in men [commits](https://github.com/Anna-Kyra/11ty-framework/commits/main/) uitgelegd hoe de code werkt en welke bron ik heb gebruikt.
+
 ## 11ty bevindingen
 Het installeren en het builden van dit framework gaat ontzettend snel. Dit is ook mede hun verkoop middel. Het builden gebeurt meestal in 0.12 sec.
 De logica achter dit framework is makkelijker om te begrijpen dan andere frameworks.
