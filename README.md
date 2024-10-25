@@ -6,7 +6,7 @@ Deze repo staat in het teken van je eigen tech-stack flow te onderzoeken en te e
 - CMS: Het CMS systeem dat ik heb gebruikt voor deze repo is contentful.
 - Deployer: Voor het deployen heb ik netlify gebruikt
 
-Heb verder notities gemaakt in men [I love web](https://github.com/Anna-Kyra/i-love-web/wiki/Eleventy) voor mezelf om uitteleggen hoe ik sommigen dingen heb gedaan.
+Heb verder notities gemaakt in men [I love web](https://github.com/Anna-Kyra/i-love-web/wiki/Eleventy) voor mezelf om uitteleggen hoe ik sommigen dingen heb gedaan. <br>
 Verder heb ik met nieuwe code in men [commits](https://github.com/Anna-Kyra/11ty-framework/commits/main/) uitgelegd hoe de code werkt en welke bron ik heb gebruikt.
 
 ## 11ty bevindingen
