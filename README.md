@@ -37,6 +37,7 @@ Bevindingen van Yu Jing en mij: https://github.com/yujing-student/justify-your-t
 ### Cons:
 1. Is meer gemaakt voor statische website's, dus daar draait de docs ook meer om.
 2. Wordt meer voor personelijke projecten gebruikt
+3. Voor atomic design is de css 
 
 
 ## Contentful bevindingen
@@ -48,6 +49,7 @@ Je moet ook toegang hebben voor meerdere dingen.
 11ty en contentful zijn allebij niet gemaakt met elkaar in gedachten, dus het was erg lastig om hier goede documentatie van te vinden op 1 na.
 Ja er is veel documentatie aanwezig voor deze CMS, maar je moet wel al meer verstand hebben van headless CMS. De leergraad is erg hoog voor developers. Het is overegens wel overzichtelijker voor mensen die de code niet hoeven in te duiken.
 Er zijn wel tutorials te vinden over contentful, maar dat is meer uitleggen wat een cms is, dus meer de basis.
+Had ook veel moeite om een ondere contentType dan 'page' te renderen. De navigatie (header) en footer zaten niet in de page pagina's. Het is dus de bedoeling om 
 
 ### Pros:
 1. Veel documentatie
@@ -57,6 +59,7 @@ Er zijn wel tutorials te vinden over contentful, maar dat is meer uitleggen wat 
 2.  Geen goede ervaring
 3.  Het is overzichtelijk, maar ook weer niet
 4.  Kost geld als je meer dan 5 users hebt ($300 per maand voor 20 users)
+5.  De quiries zijn heel onoverzichtelijk
 
 ## Netlify bevindingen
 De deploy link verbind snel. Heb hiervoor cyclic en onrender gebruikt. 
